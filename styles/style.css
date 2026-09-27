@@ -72,6 +72,7 @@ html {
 }
 
 .content__card-link {
+  display: block;
   text-decoration: none;
   color: rgba(255, 255, 255, 1);
 }
@@ -281,10 +282,6 @@ input:focus {
 .button:focus-visible {
   outline: 1px solid rgba(255, 255, 255, 1);
   outline-offset: 1px;
-}
-
-.content__card-link {
-  display: block;
 }
 
 .content__card-link_current {
