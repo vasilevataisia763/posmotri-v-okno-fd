@@ -37,7 +37,7 @@ ol {
   list-style: none;
 }
 
-/* Кастомный скроллбар */
+/* Кастомный скролkлбар */
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
 }
