@@ -23,7 +23,6 @@ html {
 
 .content {
   display: flex;
-  flex-direction: row;
   align-items: end;
   column-gap: 30px;
   width: 1140px;
@@ -34,11 +33,10 @@ html {
   flex-direction: column;
   flex-grow: 1;
   row-gap: 26px;
-  height: 534px;
 }
 
 .title {
-  font-family: Oswald;
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -55,9 +53,9 @@ html {
   position: relative;
   display: flex;
   overflow-y: auto;
-  overflow-x: hidden;
   flex-direction: column;
   row-gap: 30px;
+  height: 298px;
 }
 
 .content__list {
@@ -79,7 +77,6 @@ html {
 
 .content__video-card {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
 }
 
@@ -91,7 +88,7 @@ html {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
@@ -100,10 +97,11 @@ html {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 196px;
 }
 
 .content__video-card-description {
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
@@ -146,7 +144,7 @@ html {
 }
 
 .search-form__fieldset-title {
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
@@ -156,13 +154,11 @@ html {
 
 .search-form__checkbox-list {
   display: flex;
-  flex-direction: row;
   gap: 15px;
 }
 
 .search-form__label {
   display: flex;
-  flex-direction: row;
   align-items: center;
   width: fit-content;
   column-gap: 5px;
@@ -171,26 +167,21 @@ html {
 
 .search-form__textfield {
   width: 225px;
-  height: 27px;
+  min-height: 27px;
   background-color: transparent;
   appearance: none;
   border-width: 1px 0px 1px 0px;
   border-style: solid;
   border-color: rgba(255, 255, 255, 1);
-  color: rgb(255 255 255 / 0.7);
-  font-family: Fira Sans Condensed;
+  color: rgb(255 255 255 / 1);
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 0%;
 }
 .search-form__textfield::placeholder {
-  color: rgb(255 255 255 / 0.7);
-  font-family: Fira Sans Condensed;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 100%;
-  letter-spacing: 0%;
+  color: rgb(255 255 255 / 1);
 }
 
 input:focus {
@@ -247,7 +238,7 @@ input:focus {
   border: 1px solid rgba(255, 255, 255, 1);
   min-height: 34px;
   background-color: transparent;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 100%;
@@ -296,8 +287,6 @@ input:focus {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-decoration-skip-ink: none;
-  text-underline-offset: 2px;
-  /* Из-за реализации переноса строк карточек с -webkit-, не получается к этому тексту добавить подчеркивание, не знаю как это решить, если, как я поняла line-clamp без -webkit- не работает*/
 }
 .content__card-link:focus {
   border: none;
